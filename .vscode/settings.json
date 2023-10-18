@@ -1,0 +1,6 @@
+{
+    "dbt.enableNewLineagePanel": false,
+    "files.associations": {
+        "*.sql": "jinja-sql"
+    },
+}

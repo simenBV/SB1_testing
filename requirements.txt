@@ -1,0 +1,4 @@
+dbt-snowflake
+prefect
+meltano
+awscli

@@ -1,0 +1,14 @@
+# Snowflake
+default:
+    target: dev
+    outputs:
+        dev:
+            type: snowflake
+            account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}"
+            user: "SIMENBOGVIKANE"
+            private_key_path: "{{ env_var('GITPOD_REPO_ROOT') }}/profiles/rsa_key.pem"
+
+
+            database: "ANALYTICS"
+            warehouse: "{{ env_var('DBT_SNOWFLAKE_WH') }}"
+            schema: "{{ env_var('DBT_SNOWFLAKE_SCHEMA') }}"
